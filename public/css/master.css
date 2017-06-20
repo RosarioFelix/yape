@@ -1,0 +1,49 @@
+.yellow{
+  background-color: #fbd43b!important;
+}
+.green-text{
+  color: #00c3a3!important;
+}
+/*carrusel*/
+.container{
+  padding: 15px;
+  margin-top: 20%;
+}
+.carousel.carousel-slider{
+  height: 320px !important;
+}
+.carousel .carousel-item > img{
+  width: 60%;
+}
+.carousel.carousel-slider .carousel-item p{
+  font-size: 14px;
+}
+/*carousle - indicadore*/
+.carousel .indicators .indicator-item.active{
+  background-color: #f64552;
+}
+.carousel .indicators .indicator-item{
+  background-color:  #dddddd;
+}
+/*boton*/
+.btn{
+  width: 100%;
+  margin-top: 10%;
+}
+.btn,.btn:hover{
+  box-shadow: none;
+}
+/*segunda parte*/
+.container > img{
+  width: 40%;
+}
+.container > p{
+  font-weight: bold;
+  font-size: 18px;
+}
+.container > span{
+  font-size: 12px;
+}
+.input:not([type]):active{
+  border-bottom-color: #fbd43b;
+}
