@@ -3,27 +3,36 @@
 const render = (root) => {
   root.empty();
   const wrapper = $('<div class="wrapper"></div>');
-  //if(state.selectedInfo){
+  if(state.selectedInfo == null){
     wrapper.append(Slide(_ => render(root)));
+  }else if(state.selectedInfo == "info2"){
     wrapper.append(Segundo(_ => render(root)));
-    root.append(wrapper);
-};
+    //root.append(wrapper);
+  }else if(state.selectedInfo == "info3"){
+    wrapper.append(Codigo(_ => render(root)));
+    //root.append(wrapper);
+  }else if(state.selectedInfo == "info4"){
+    wrapper.append(Datos(_ => render(root)));
+  }else if (state.selectedInfo == "info5"){
+    wrapper.append(Registrado());
+  }
+  root.append(wrapper);
+}
 
 const state = {
-  info:null,
-  selectedInfo:null
+  //info:null,
+  selectedInfo: null,
+  phone : null,
+  code: null,
+  data : null,
+  name : null,
+  email : null,
+  password: null
 }
 
 $(_=>{
-
-  $.post('api/registerNumber',{
-    phone:995173456,
-    terms:true
-},(response) =>{
   const root = $('.root');
   render(root);
   $('.carousel.carousel-slider').carousel({fullWidth: true});
-  console.log(response);
 
-},'json');
 });

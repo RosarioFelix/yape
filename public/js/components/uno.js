@@ -1,6 +1,6 @@
 'use strict';
 
-const Slide = (infor,update) => {
+const Slide = (update) => {
   const containerSli = $('<div class ="container"></div>');
   const  slide = $('<div class="carousel carousel-slider center" data-indicators="true" style ="height:320px"></div>');
   const containerUno = $('<div class="carousel-item "><img src= "img/icons/icon-people.png"></div>');
@@ -25,23 +25,14 @@ const Slide = (infor,update) => {
   containerTres.append(hcincoTres);
   containerTres.append(textTres);
   containerSli.append(button);
-if (state.selectedInfo == null){
+
+
   button.on("click", (e) => {
     e.preventDefault();
-    state.selectedInfo = infor;
+    state.selectedInfo = "info2";
     update();
     console.log(update)
-    alert("hola")
   });
-};
+
   return containerSli;
 };
-
-/*const Container = (update) =>{
-  const container =  $('<div></div>');
-  state.info =() =>{
-    container.append(Slide(informacion,update));
-  };
-  return container;
-
-}*/

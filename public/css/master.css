@@ -1,8 +1,25 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
 .yellow{
   background-color: #fbd43b!important;
 }
 .green-text{
   color: #00c3a3!important;
+}
+.text-neg{
+  font-weight: 700;
+  font-size: 18px;
+}
+.text-small{
+  font-size: 12px;
+  font-weight: 300;
+}
+.label-img{
+  margin-top: 10px;
+}
+.mt-15{
+  margin-top: 15%;
 }
 /*carrusel*/
 .container{
@@ -10,13 +27,14 @@
   margin-top: 20%;
 }
 .carousel.carousel-slider{
-  height: 320px !important;
+  height: 360px !important;
 }
 .carousel .carousel-item > img{
   width: 60%;
 }
 .carousel.carousel-slider .carousel-item p{
   font-size: 14px;
+  font-weight: 300;
 }
 /*carousle - indicadore*/
 .carousel .indicators .indicator-item.active{
@@ -34,16 +52,41 @@
   box-shadow: none;
 }
 /*segunda parte*/
-.container > img{
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex > img{
   width: 40%;
 }
-.container > p{
-  font-weight: bold;
-  font-size: 18px;
+.label-img >img{
+  width: 18%;
+  position: absolute;
 }
-.container > span{
-  font-size: 12px;
+form >label{
+  font-weight: 300;
 }
-.input:not([type]):active{
-  border-bottom-color: #fbd43b;
+input[type=number]:focus:not([readonly]), input[type=number],
+input[type=text],input[type=text]:focus:not([readonly]),
+input[type=email],input[type=email]:focus:not([readonly]),
+input[type=password],input[type=text]:focus:not([readonly]){
+  text-align: center;
+}
+input[type=number]:focus:not([readonly]),input[type=text]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),input[type=password]:focus:not([readonly]){
+  border-bottom:1.5px solid #fbd43b;
+  box-shadow: none;
+}
+.flex .btn{
+  width: 50%;
+  margin-top: 18%;
+}
+/*tercera */
+.candado > img{
+  width: 6%;
+}
+/*cuarto*/
+.cuarto{
+  width: 70%!important;
 }
