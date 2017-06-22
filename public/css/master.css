@@ -21,6 +21,19 @@
 .mt-15{
   margin-top: 15%;
 }
+.mt-menos15{
+  margin-top: -15%;
+}
+.pd-25{
+  padding-top: 40%;
+}
+.relative{
+  position: relative;
+}
+.fl-right{
+  float: right;
+}
+
 /*carrusel*/
 .container{
   padding: 15px;
@@ -89,4 +102,26 @@ input[type=email]:focus:not([readonly]),input[type=password]:focus:not([readonly
 /*cuarto*/
 .cuarto{
   width: 70%!important;
+}
+/*quinto*/
+.img-datos>img{
+  width: 8%;
+  position: absolute;
+  display: block;
+}
+.small{
+  width: 6%!important;
+}
+/*sexto*/
+.bg{
+  height: 640px;
+}
+.bg{
+  font-weight: 700;
+  font-size: 18px;
+}
+/*Septimo*/
+.help{
+  margin-top: -25%;
+  width: 14%;
 }
