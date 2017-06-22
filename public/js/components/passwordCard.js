@@ -47,6 +47,7 @@ const PasswordCard =(update) =>{
           cardYear: state.year,
           cardPassword: passw.val()
       },(response) =>{
+        console.log(response)
        if(response.success == false){
           spanNot.htm('Usuario no encontrado');
         }else{
