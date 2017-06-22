@@ -9,7 +9,7 @@ const CreditCard =(update) =>{
   const pmensajitoCredit = $('<p class ="center-align gray-text text-small">Por ahora solo aceptamos cuentas de ahorro y/o corriente en soles</p>');
   const formCredit = $('<form></form>');
   const labelInputCard= $('<label class ="img-datos"><img class ="mt-menos15 " src="img/icons/card.png"></label>');
-  const card = $('<input class="relative" max="16" type = "number" required/>');
+  const card = $('<input class="relative"type = "number" maxlength="16" title ="Solo 16 digitos" required>');
   const divScanCard = $('<div class = "flex  scan"></div>');
   const imgScan = $('<img src = "img/icons/scan.png">');
   const textScan = $('<span class="green-text">Escanear tarjeta<span>');
@@ -17,9 +17,9 @@ const CreditCard =(update) =>{
   const colCinco =$('<div class = "col s5"><div>');
   const dateCard = $('<span>Fecha de vencimiento<span>');
   const colCuatro= $('<div class = "col s3"><div>');
-  const inputMes = $('<input  type="number" placeholder = "00"  required/>');
+  const inputMes = $('<input  type="number" placeholder = "00" maxlength="2"  required>');
   const colCuatroDos= $('<div class = "col s3"><div>');
-  const inputAno = $('<input  type="number" placeholder ="00"  required/>');
+  const inputAno = $('<input  type="number" placeholder ="00" maxlength="2" required>');
   const btnflexCard = $('<div class = "flex"></div>');
   const buttonContinueCard = $('<button class ="btn yellow">Continuar</button>');
   buttonContinueCard.prop('disabled', true);

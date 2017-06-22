@@ -10,9 +10,9 @@ const Datos = (update) =>{
   const labelInputFace= $('<label class ="img-datos"><img class="mt-menos15" src="img/icons/user.png"></label>');
   const name = $('<input class="relative" type = "text" placeholder="nombre">');
   const labelInputEmail= $('<label class ="img-datos"><img src="img/icons/message-gray.png"></label>');
-  const email = $('<input class="relative" type = "email" placeholder="correo@ejemplo.com">');
+  const email = $('<input class="relative" type = "email" placeholder="correo@ejemplo.com" required>');
   const labelInputPassw= $('<label class ="img-datos"><img class ="small" src="img/icons/lock.png"></label>');
-  const password = $('<input class="relative" type = "password" placeholder="Ingresa clave de 6 digitos" /required>');
+  const password = $('<input class="relative" type = "password" placeholder="Ingresa clave de 6 digitos" required>');
   const mensajeClaveCuidar =$('<p class="center-align gray-text text-small">Cuida esta clave como oro, es tú acseso a Yape</p>');
   const btnflexDatos = $('<div class = "flex "></div>');
   const buttonCreaUser = $('<button class ="btn yellow cuarto">Crear Cuenta</button>');
