@@ -125,3 +125,7 @@ input[type=email]:focus:not([readonly]),input[type=password]:focus:not([readonly
   margin-top: -25%;
   width: 14%;
 }
+/*credit Card*/
+.scan > img{
+  width: 6%;
+}
